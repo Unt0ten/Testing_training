@@ -1,9 +1,7 @@
 from package_name import capitalize
 
-if capitalize.capitalize('hello') != 'Hello':
-    raise Exception('The function is not working properly!')
+assert capitalize.capitalize('hello') == 'Hello'
 
-if capitalize.capitalize('') != '':
-    raise Exception('The function is not working properly!')
+assert capitalize.capitalize('') == ''
 
 print('All tests passed!')
